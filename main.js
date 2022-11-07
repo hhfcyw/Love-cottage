@@ -1,5 +1,6 @@
 import App from './App'
-
+import {router,RouterMount} from './router/router.js'  //路径换成自己的
+Vue.use(router)
 // #ifndef VUE3
 import Vue from 'vue'
 Vue.config.productionTip = false
@@ -8,6 +9,8 @@ const app = new Vue({
     ...App
 })
 app.$mount()
+
+RouterMount(app,router,'#app')
 // #endif
 
 // #ifdef VUE3
