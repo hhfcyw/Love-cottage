@@ -32,13 +32,15 @@
 	export default {
 		data() {
 			return {
-				PageCur: 'home'
+				
 			}
+		},
+		props:{
+			PageCur:String
 		},
 		methods:{
 			NavChange(e){
-				console.log(e)
-				this.PageCur = e.currentTarget.dataset.cur
+				this.$emit('updatePageCur',e.currentTarget.dataset.cur)
 			},
 		}
 

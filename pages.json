@@ -11,42 +11,7 @@
 				"navigationBarTitleText": "首页",
 				"enablePullDownRefresh": false
 			},
-			"redirect": "pages/home/home",
-			"children": [{
-					"path": "pages/home/home",
-					"name": "home",
-					"desc": "首页",
-					"meta": {
-						"power": "public" // 不需要登录
-					},
-					"style": {
-						"navigationBarTitleText": "",
-						"enablePullDownRefresh": false
-					}
-				},
-				{
-					"path": "pages/me/me",
-					"name": "me",
-					"desc": "我的",
-					"meta": {
-						"power": "public" // 不需要登录
-					},
-					"style": {
-						"navigationBarTitleText": "",
-						"enablePullDownRefresh": false
-					}
-				},
-
-				{
-					"path": "pages/love/love",
-					"style": {
-						"navigationBarTitleText": "",
-						"enablePullDownRefresh": false
-					}
-
-				}
-			]
-
+			"redirect": "pages/home/home"
 		},
 		{
 			"path": "pages/login/login",
@@ -56,6 +21,39 @@
 				"navigationBarTitleText": "登录",
 				"enablePullDownRefresh": false
 			}
+		},
+		{
+			"path": "pages/home/home",
+			"name": "home",
+			"desc": "首页",
+			"meta": {
+				"power": "public" // 不需要登录
+			},
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/me/me",
+			"name": "me",
+			"desc": "我的",
+			"meta": {
+				"power": "public" // 不需要登录
+			},
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		},
+
+		{
+			"path": "pages/love/love",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
 		}
 	],
 	"globalStyle": {
